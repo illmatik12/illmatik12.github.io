@@ -1,13 +1,13 @@
 ---
 title: "Install Agensgraph On Centos7 "
-date: 2019-01-08 10:09:28 -0400
-categories: jekyll update
+date: 2019-01-08 17:09:28 -0400
+categories: agensgraph centos
 ---
 Agensgraph is graph database management system based on the PostgreSQL.
 It supports Vertex, Edge(Node, Relationship) with flexible data type (JSON, properties)
-We can download it from source code or pre-built packages. You can easily install with following steps. But This guide is sample cluster se
+You can download it from source code or pre-built packages. And easily install with following steps. But this is sample cluster setting.So you need more settings about production level.   
 
-btw. Let's start.
+anyway. Let's start.
 ### Installation
 #### Install essential libraries (root)
 ```bash
@@ -227,21 +227,21 @@ RETURN *
 ;
 ```
 ```
-agens2=# create graph test_graph;     
+agens=# create graph test_graph;     
 CREATE GRAPH
-agens2=# 
-agens2=# set graph_path = test_graph;
+agens=# 
+agens=# set graph_path = test_graph;
 SET
-agens2=# CREATE (tom:Person {id:1, name :'Tom'})-[:knows {since : 2018}]->(sam: Person {id:2, name :'Sam'});
+agens=# CREATE (tom:Person {id:1, name :'Tom'})-[:knows {since : 2018}]->(sam: Person {id:2, name :'Sam'});
 GRAPH WRITE (INSERT VERTEX 2, INSERT EDGE 1)
-agens2=# 
-agens2=# MATCH (a)-[e]->(b)
-agens2-# RETURN * 
-agens2-# ;
+agens=# 
+agens=# MATCH (a)-[e]->(b)
+agens-# RETURN * 
+agens-# ;
                   a                  |                 e                  |                  b                  
 -------------------------------------+------------------------------------+-------------------------------------
  person[3.1]{"id": 1, "name": "Tom"} | knows[4.1][3.1,3.2]{"since": 2018} | person[3.2]{"id": 2, "name": "Sam"}
 (1 row)
 
-agens2=# 
+agens=# 
 ```
