@@ -15,7 +15,7 @@ yum install -y gcc glibc glib-common readline readline-devel zlib zlib-devel fle
 
 ```
 ```
-[root@vmtest7 ~]# yum install -y gcc glibc glib-common readline readline-devel zlib zlib-devel flex bison git
+# yum install -y gcc glibc glib-common readline readline-devel zlib zlib-devel flex bison git
 Loaded plugins: fastestmirror, langpacks
 Loading mirror speeds from cached hostfile
  * base: mirror.kakao.com
@@ -154,9 +154,9 @@ export AGDATA=/home/agens/db_cluster
 agens --version
 ```
 ```
-[agens@vmtest7 ~]$ agens --version
+$ agens --version
 agens (AgensGraph) 1.4devel
-[agens@vmtest7 ~]$ 
+$ 
 ```
 
 #### initdb & start cluster
