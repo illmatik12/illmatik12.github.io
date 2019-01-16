@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://illmatik12.github.io/sitemap.xml
