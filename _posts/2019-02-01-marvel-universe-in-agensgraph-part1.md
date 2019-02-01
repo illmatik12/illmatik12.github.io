@@ -8,23 +8,22 @@ The Marvel Universe is American comic book series such as the Avengers, the Iron
 I like the Iron Man and the Guardians of the Galaxy series.
 
 Well, I explain how to import the Marvel Universe dataset into agensgraph database. I referrenced these datasets from Kaggle.
-![marvel](/_screenshots/marvel_universe.jpg)
+![marvel](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe.jpg)
 
 ### Requirements
 * Agensgraph
 * The Marvel universe datasets. (the-marvel-universe-social-network.zip)
 
 ### data structure
-Files | Columns | Description
---- | --- | ---
-edge.csv | hero / comic |  Heroes and the comic in which they appear. 
-hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.
-edges.csv | node/ type | Node name and type 
+|Files | Columns | Description|
+| --- | --- | ---|
+|edge.csv | hero / comic |  Heroes and the comic in which they appear. |
+|hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
+|edges.csv | node/ type | Node name and type |
 
 ### Graph Modeling 
 #### simple graph model
-![marvel](/_screenshots/marvel_universe.jpg?raw=true)
-<img alt="marvel universe" src="/_screenshots/marvel_universe.jpg?raw=true" width="300px" />
+![marvel](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe_graph_model.jpg)
 
 * Vertex Label : hero / comic
 * Edge Label : appeared_in / knows
