@@ -185,10 +185,12 @@ agens=#
 ```
 
 ### Conclusion
+
 graph data/model is a such a complicated. but graph database can solve the problem step by step . 
 As you can see above, Agensgraph can store csv data with graph model (ex: social network data) 
-More information you can visit website https://bitnine.net/
+More information you can visit website [https://bitnine.net](https://bitnine.net)
 
 ### References
-[1] https://en.wikipedia.org/wiki/Marvel_Universe
-[2] https://www.kaggle.com/csanhueza/the-marvel-universe-social-network
+
+[1] (https://en.wikipedia.org/wiki/Marvel_Universe)
+[2] (https://www.kaggle.com/csanhueza/the-marvel-universe-social-network)
