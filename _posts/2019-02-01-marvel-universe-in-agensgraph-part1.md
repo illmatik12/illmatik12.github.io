@@ -23,11 +23,13 @@ edges.csv | node/ type | Node name and type
 
 ### Graph Modeling 
 #### simple graph model
-![marvel](/_screenshots/marvel_universe_graph_model.jpg)
+![marvel](/_screenshots/marvel_universe.jpg?raw=true)
+<img alt="marvel universe" src="/_screenshots/marvel_universe.jpg?raw=true" width="300px" />
+
 * Vertex Label : hero / comic
 * Edge Label : appeared_in / knows
 
-#####this means 
+##### this means 
 * **hero** appeared in **comic**.
 * **hero** knows **hero**.
 
