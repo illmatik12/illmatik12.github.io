@@ -15,15 +15,16 @@ Well, I explain how to import the Marvel Universe dataset into agensgraph databa
 * The Marvel universe datasets. (the-marvel-universe-social-network.zip)
 
 ### data structure
-|Files | Columns | Description|
-| --- | --- | ---|
+| Files  | Columns  |Description
+| ------------ | ------------ |
 |edge.csv | hero / comic |  Heroes and the comic in which they appear. |
 |hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
 |edges.csv | node/ type | Node name and type |
 
+
 ### Graph Modeling 
 #### simple graph model
-![marvel](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe_graph_model.jpg)
+![marvel graph](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe_graph_model.jpg)
 
 * Vertex Label : hero / comic
 * Edge Label : appeared_in / knows
