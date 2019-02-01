@@ -159,34 +159,32 @@ GRAPH WRITE (INSERT VERTEX 0, INSERT EDGE 183645)
 agens=# 
 agens=# MATCH (a:hero )-[e:knows]->(b:hero)
 agens-# WHERE a.name = 'CAPTAIN AMERICA'
-agens-# RETURN a.name, labels(e), b.name
+agens-# RETURN a.name, label(e), b.name
 agens-# LIMIT 20
 agens-# ;
-                   a                    |              e               |                      b                      
-----------------------------------------+------------------------------+---------------------------------------------
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.66][3.858,3.2]{}     | hero[3.2]{"name": "3-D MAN/CHARLES CHAN"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.222][3.858,3.8]{}    | hero[3.8]{"name": "ABOMINATION/EMIL BLO"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.504][3.858,3.13]{}   | hero[3.13]{"name": "ABSORBING MAN/CARL C"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.574][3.858,3.16]{}   | hero[3.16]{"name": "ACHEBE, REVEREND DOC"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.617][3.858,3.18]{}   | hero[3.18]{"name": "ACHILLES II/HELMUT"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.685][3.858,3.21]{}   | hero[3.21]{"name": "ADAMS, CINDY"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.741][3.858,3.25]{}   | hero[3.25]{"name": "ADAMS, NICOLE NIKKI"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.993][3.858,3.41]{}   | hero[3.41]{"name": "AGAMEMNON III/"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1103][3.858,3.48]{}  | hero[3.48]{"name": "AGENT AXIS/"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1511][3.858,3.71]{}  | hero[3.71]{"name": "AKUTAGAWA, OSAMU"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1520][3.858,3.72]{}  | hero[3.72]{"name": "ALANYA"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1594][3.858,3.78]{}  | hero[3.78]{"name": "ALDEN, PROF. MEREDIT"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1700][3.858,3.81]{}  | hero[3.81]{"name": "ALEXANDER, CARRIE"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1842][3.858,3.92]{}  | hero[3.92]{"name": "ALVAREZ, FELIX"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1942][3.858,3.97]{}  | hero[3.97]{"name": "AMERICAN EAGLE III/J"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.1958][3.858,3.100]{} | hero[3.100]{"name": "AMERICOP/"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.2018][3.858,3.105]{} | hero[3.105]{"name": "AMPHIBIAN/KINGLEY RI"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.2110][3.858,3.107]{} | hero[3.107]{"name": "ANACONDA/BLANCHE SIT"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.2540][3.858,3.130]{} | hero[3.130]{"name": "ANELLE"}
- hero[3.858]{"name": "CAPTAIN AMERICA"} | knows[6.2665][3.858,3.133]{} | hero[3.133]{"name": "ANGEL DOPPELGANGER"}
+       name        |  label  |          name          
+-------------------+---------+------------------------
+ "CAPTAIN AMERICA" | "knows" | "3-D MAN/CHARLES CHAN"
+ "CAPTAIN AMERICA" | "knows" | "ABOMINATION/EMIL BLO"
+ "CAPTAIN AMERICA" | "knows" | "ABSORBING MAN/CARL C"
+ "CAPTAIN AMERICA" | "knows" | "ACHEBE, REVEREND DOC"
+ "CAPTAIN AMERICA" | "knows" | "ACHILLES II/HELMUT"
+ "CAPTAIN AMERICA" | "knows" | "ADAMS, CINDY"
+ "CAPTAIN AMERICA" | "knows" | "ADAMS, NICOLE NIKKI"
+ "CAPTAIN AMERICA" | "knows" | "AGAMEMNON III/"
+ "CAPTAIN AMERICA" | "knows" | "AGENT AXIS/"
+ "CAPTAIN AMERICA" | "knows" | "AKUTAGAWA, OSAMU"
+ "CAPTAIN AMERICA" | "knows" | "ALANYA"
+ "CAPTAIN AMERICA" | "knows" | "ALDEN, PROF. MEREDIT"
+ "CAPTAIN AMERICA" | "knows" | "ALEXANDER, CARRIE"
+ "CAPTAIN AMERICA" | "knows" | "ALVAREZ, FELIX"
+ "CAPTAIN AMERICA" | "knows" | "AMERICAN EAGLE III/J"
+ "CAPTAIN AMERICA" | "knows" | "AMERICOP/"
+ "CAPTAIN AMERICA" | "knows" | "AMPHIBIAN/KINGLEY RI"
+ "CAPTAIN AMERICA" | "knows" | "ANACONDA/BLANCHE SIT"
+ "CAPTAIN AMERICA" | "knows" | "ANELLE"
+ "CAPTAIN AMERICA" | "knows" | "ANGEL DOPPELGANGER"
 (20 rows)
-
-agens=# 
 
 ```
 
