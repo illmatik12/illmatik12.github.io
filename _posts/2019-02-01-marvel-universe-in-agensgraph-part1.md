@@ -7,12 +7,15 @@ categories: marvel agensgraph
 The Marvel Universe is American comic book series such as the Avengers, the Iron Man and others. It consisting of thousands of separate universes.
 I like the Iron Man and the Guardians of the Galaxy series.
 
-Well, I explain how to import the Marvel Universe dataset into agensgraph database. I referrenced these datasets from Kaggle.
+Well, I explain how to import the Marvel Universe dataset into agensgraph database. I referrenced these datasets from [Kaggle](https://www.kaggle.com/csanhueza/the-marvel-universe-social-network)
+
 ![marvel](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe.jpg)
+
+
 
 ### Requirements
 * Agensgraph
-* The Marvel universe datasets. (the-marvel-universe-social-network.zip)
+* The Marvel universe datasets. [(the-marvel-universe-social-network.zip)](https://www.kaggle.com/csanhueza/the-marvel-universe-social-network/downloads/the-marvel-universe-social-network.zip/1)
 
 ### data structure
 
@@ -22,22 +25,18 @@ Well, I explain how to import the Marvel Universe dataset into agensgraph databa
 |hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
 |edges.csv | node/ type | Node name and type |
 
-| Files | Columns | Description |
-|:--------|:-------:|--------:|
-| edge.csv   |  hero / comic |  Heroes and the comic in which they appear. |
-| hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
-| edges.csv | node/ type | Node name and type |
 
 ### Graph Modeling 
 #### simple graph model
 ![marvel graph](https://raw.githubusercontent.com/illmatik12/illmatik12.github.io/master/_screenshots/marvel_universe_graph_model.jpg)
 
-* Vertex Label : hero / comic
+* Vertex Label : hero {name} / comic {title}
 * Edge Label : appeared_in / knows
 
 ##### this means 
 * **hero** appeared in **comic**.
 * **hero** knows **hero**.
+
 
 
 ### Data Import
@@ -154,7 +153,7 @@ GRAPH WRITE (INSERT VERTEX 0, INSERT EDGE 183645)
 agens=# 
 agens=# MATCH (a:hero )-[e:knows]->(b:hero)
 agens-# WHERE a.name = 'CAPTAIN AMERICA'
-agens-# RETURN * 
+agens-# RETURN a.name, labels(e), b.name
 agens-# LIMIT 20
 agens-# ;
                    a                    |              e               |                      b                      
@@ -184,3 +183,12 @@ agens-# ;
 agens=# 
 
 ```
+
+### Conclusion
+graph data/model is a such a complicated. but graph database can solve the problem step by step . 
+As you can see above, Agensgraph can store csv data with graph model (ex: social network data) 
+More information you can visit website https://bitnine.net/
+
+### References
+[1] https://en.wikipedia.org/wiki/Marvel_Universe
+[2] https://www.kaggle.com/csanhueza/the-marvel-universe-social-network
