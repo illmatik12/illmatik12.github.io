@@ -1,7 +1,13 @@
 ---
 title: "the-marvel universe in agensgraph - part1 "
 date: 2019-02-01 10:09:28 -0400
-categories: marvel agensgraph 
+categories:
+  - agensgraph
+  - marvel
+  - graphdatabase
+tags:
+  - categories
+  - edge case
 ---
 
 The Marvel Universe is American comic book series such as the Avengers, the Iron Man and others. It consisting of thousands of separate universes.
