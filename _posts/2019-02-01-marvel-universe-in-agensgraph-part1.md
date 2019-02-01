@@ -1,5 +1,5 @@
 ---
-title: "the-marvel universe in agensgraph - part1 "
+title: "The Marvel universe in agensgraph - part1 "
 date: 2019-02-01 10:09:28 -0400
 categories:
   - agensgraph
