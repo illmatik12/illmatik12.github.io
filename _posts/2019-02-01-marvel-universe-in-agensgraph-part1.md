@@ -22,6 +22,11 @@ Well, I explain how to import the Marvel Universe dataset into agensgraph databa
 |hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
 |edges.csv | node/ type | Node name and type |
 
+| Files | Columns | Description |
+|:--------|:-------:|--------:|
+| edge.csv   |  hero / comic |  Heroes and the comic in which they appear. |
+| hero-network.csv | hero1 / hero2 |  Edges between heroes that appear in the same comic.|
+| edges.csv | node/ type | Node name and type |
 
 ### Graph Modeling 
 #### simple graph model
