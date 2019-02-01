@@ -8,6 +8,7 @@ categories:
 tags:
   - categories
   - edge case
+sidebar_link: true
 ---
 
 The Marvel Universe is American comic book series such as the Avengers, the Iron Man and others. It consisting of thousands of separate universes.

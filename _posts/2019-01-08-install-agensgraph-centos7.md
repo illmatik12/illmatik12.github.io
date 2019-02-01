@@ -1,7 +1,14 @@
 ---
 title: "Install Agensgraph On Centos7 "
 date: 2019-01-08 17:09:28 -0400
-categories: agensgraph centos
+categories:
+  - agensgraph
+  - centos
+  - graphdatabase
+tags:
+  - categories
+  - edge case
+sidebar_link: true
 ---
 Agensgraph is graph database management system based on the PostgreSQL.
 It supports Vertex, Edge(Node, Relationship) with flexible data type (JSON, properties)
